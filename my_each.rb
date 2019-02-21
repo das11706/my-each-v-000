@@ -1,5 +1,7 @@
 def my_each(array)
-  while array.length > 0 do |word|
+  i = 0
+  while i < array.length do |word|
     yield
+    i+=1
   end
 end
